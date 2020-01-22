@@ -1,0 +1,26 @@
+/// <reference types="Cypress" />
+//node_modules\.bin\cypress open
+
+describe('My First Test Suite', function() {
+    it('my first test case', function() {
+        cy.visit("https://www.rahulshettyacademy.com/AutomationPractice/")
+// table 
+        cy.get('tr td:nth-child(2)').each(($e1, index, $list) => {
+            
+            const text=$e1.text()
+            if(text.includes("Python"))
+            {
+               //siblings
+               cy.get('tr td:nth-child(2)').eq(index).next().then(function(price)
+               {
+                 const priceTxt = price.text()
+                 expect(priceTxt).to.equal('25')
+               })
+         }
+
+     
+
+         })
+    })
+
+})
