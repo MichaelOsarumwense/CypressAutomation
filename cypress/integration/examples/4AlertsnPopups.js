@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 //node_modules\.bin\cypress open
 
-describe('My First Test Suite', function() {
-    it('my first test case', function() {
+describe('My fourth Test Suite', function() {
+    it('my 4 test case', function() {
         cy.visit("https://www.rahulshettyacademy.com/AutomationPractice/")
         cy.get('#alertbtn').click()
         cy.get('#confirmbtn').click()

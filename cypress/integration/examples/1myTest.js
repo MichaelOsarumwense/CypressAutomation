@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 //node_modules\.bin\cypress open
 
-describe('My First Test Suite', function() {
+describe('My 1 Test Suite', function() {
     it('my first test case', function() {
 
         cy.visit("https://www.rahulshettyacademy.com/seleniumPractise/#/")

@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules\\.bin\\cypress run",
+    "headedTest":"npm run test -- --headed",
+    "ChromeTest":"npm run test -- --browser chrome",
+    "parallelTest":"npm run test -- --browser chrome --parallel",
+    "recordDashboardTest":"npm run test -- --record --key b5cc8500-1759-41fe-8ba3-b693a1242dd8 --reporter mochawesome",
+    "GreenKart": "npm run test -- --spec \"cypress/integration/examples/GreenKart/*\""
+
   },
   "author": "Michaelyah",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^3.8.2"
+    "cypress": "^3.8.2",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
   }
 }

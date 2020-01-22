@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 //node_modules\.bin\cypress open
 
-describe('My second Test Suite', function() {
-    it('my first test case', function() {
+describe('My 2 Test Suite', function() {
+    it('my second test case', function() {
 
         cy.visit("https://www.rahulshettyacademy.com/seleniumPractise/#/")
         cy.get('.search-keyword').type('ca')
@@ -21,7 +21,8 @@ describe('My second Test Suite', function() {
     })
     cy.get('.cart-icon > img').click()
     cy.contains('PROCEED TO CHECKOUT').click()
-    cy.contains('Place Order').click()
+    //cy.pause()
+    //cy.contains('Place Order').click()
 
     })
 

@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 //node_modules\.bin\cypress open
-import HomePage from '../../support/pageObject/HomePage'
-import ProductPage from '../../support/pageObject/productPage'
+import HomePage from '../../../support/pageObject/HomePage'
+import ProductPage from '../../../support/pageObject/productPage'
 
 before(function(){
     cy.fixture('example').then(function(data) 
@@ -11,8 +11,8 @@ before(function(){
 
 })
 
-describe('My First Test Suite', function() {
-    it('my first test case', function() {
+describe('My eight Test Suite', function() {
+    it('my 8 test case', function() {
         //Cypress.config('pageLoadTimeout',6000)
         const homePage= new HomePage()
         const productpage = new ProductPage()

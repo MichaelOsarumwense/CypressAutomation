@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 //node_modules\.bin\cypress open
 
-describe('My First Test Suite', function() {
+describe('My First practice Suite', function() {
     it('Proquest', function() {
         cy.visit("https://www.google.co.uk")
         cy.get('.gLFyf').type('proquest')

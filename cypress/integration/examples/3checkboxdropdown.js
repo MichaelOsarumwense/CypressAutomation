@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 //node_modules\.bin\cypress open
 
-describe('My First Test Suite', function() {
-    it('my first test case', function() {
+describe('My third Test Suite', function() {
+    it('my 3 test case', function() {
         cy.visit("https://www.rahulshettyacademy.com/AutomationPractice/")
         // check boxes
         cy.get('#checkBoxOption1').check().should('be.checked').and('have.value', 'option1')

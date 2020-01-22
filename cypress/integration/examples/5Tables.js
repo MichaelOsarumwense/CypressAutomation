@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 //node_modules\.bin\cypress open
 
-describe('My First Test Suite', function() {
-    it('my first test case', function() {
+describe('My fith Test Suite', function() {
+    it('my 5 test case', function() {
         cy.visit("https://www.rahulshettyacademy.com/AutomationPractice/")
 // table 
         cy.get('tr td:nth-child(2)').each(($e1, index, $list) => {
