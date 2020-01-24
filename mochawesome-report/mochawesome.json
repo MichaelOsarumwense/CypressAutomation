@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2020-01-22T15:44:47.208Z",
-    "end": "2020-01-22T15:45:16.563Z",
-    "duration": 29355,
+    "failures": 0,
+    "start": "2020-01-24T15:04:13.862Z",
+    "end": "2020-01-24T15:04:26.432Z",
+    "duration": 12570,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3bf6ced0-3a2a-4152-97e7-abe7c8de68f0",
+      "uuid": "a143cb7a-8789-4019-b314-5a6c77fc6be1",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,44 +27,40 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "12f27d5f-0197-4fa2-8ede-b8eec875a141",
-          "title": "My First practice Suite",
+          "uuid": "94fcc488-6963-4da9-ba82-6a8b6cc6dfaf",
+          "title": "My eight Test Suite",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Proquest",
-              "fullTitle": "My First practice Suite Proquest",
+              "title": "my 8 test case",
+              "fullTitle": "My eight Test Suite my 8 test case",
               "timedOut": null,
-              "duration": 27470,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 10396,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"https://www.google.co.uk\");\ncy.get('.gLFyf').type('proquest');\ncy.get('.FPdoLc > center > .gNO89b').click({\n  force: true\n});\ncy.contains('ProQuest | Databases, EBooks and Technology for Research').click();\ncy.wait(5000);\ncy.get('.hidden-xs > .dropdown-toggle > .fa').click({\n  force: true\n});\ncy.get('#search-form > .input-group > .twitter-typeahead > .form-control').type('QA');\ncy.get('#search-form > .input-group > .input-group-btn > .btn > .fa').click();",
-              "err": {
-                "message": "CypressError: Timed out retrying: cy.type() failed because this element:\n\n<input type=\"text\" name=\"searchKeyword\" placeholder=\"Search Products &amp; Services\" aria-label=\"Search box to search entire site\" data-provide=\"typeahead\" class=\"form-control  input-sm  typeahead  tt-query\" style=\"border: none; position: relative; vertical-align: top; background-color: rgb(255, 255, 255); display: block;\" autocomplete=\"off\" spellcheck=\"false\" dir=\"auto\">\n\nis being covered by another element:\n\n<iframe src=\"https://consent-pref.trustarc.com/?type=proquest&amp;site=proquest.com&amp;action=notice&amp;country=gb&amp;locale=en&amp;behavior=expressed&amp;layout=default_eu&amp;irm=false&amp;from=https://consent.trustarc.com/\" id=\"pop-frame0622426287861362\" title=\"TrustArc Cookie Consent Manager\" tabindex=\"1\" scrolling=\"no\" style=\"border: 0px; border-radius: 2px; overflow: hidden; background: rgb(255, 255, 255); display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 282px;\"></iframe>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
-                "estack": "CypressError: Timed out retrying: cy.type() failed because this element:\n\n<input type=\"text\" name=\"searchKeyword\" placeholder=\"Search Products &amp; Services\" aria-label=\"Search box to search entire site\" data-provide=\"typeahead\" class=\"form-control  input-sm  typeahead  tt-query\" style=\"border: none; position: relative; vertical-align: top; background-color: rgb(255, 255, 255); display: block;\" autocomplete=\"off\" spellcheck=\"false\" dir=\"auto\">\n\nis being covered by another element:\n\n<iframe src=\"https://consent-pref.trustarc.com/?type=proquest&amp;site=proquest.com&amp;action=notice&amp;country=gb&amp;locale=en&amp;behavior=expressed&amp;layout=default_eu&amp;irm=false&amp;from=https://consent.trustarc.com/\" id=\"pop-frame0622426287861362\" title=\"TrustArc Cookie Consent Manager\" tabindex=\"1\" scrolling=\"no\" style=\"border: 0px; border-radius: 2px; overflow: hidden; background: rgb(255, 255, 255); display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 282px;\"></iframe>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.cypressErr (https://www.google.co.uk/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (https://www.google.co.uk/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (https://www.google.co.uk/__cypress/runner/cypress_runner.js:86193:17)\n    at Object.retry (https://www.google.co.uk/__cypress/runner/cypress_runner.js:76849:16)\n    at retryActionability (https://www.google.co.uk/__cypress/runner/cypress_runner.js:65238:19)\n    at tryCatcher (https://www.google.co.uk/__cypress/runner/cypress_runner.js:120669:23)\n    at Function.Promise.attempt.Promise.try (https://www.google.co.uk/__cypress/runner/cypress_runner.js:117944:29)\n    at tryFn (https://www.google.co.uk/__cypress/runner/cypress_runner.js:77307:21)\n    at whenStable (https://www.google.co.uk/__cypress/runner/cypress_runner.js:77342:12)\n    at https://www.google.co.uk/__cypress/runner/cypress_runner.js:76892:16\n    at tryCatcher (https://www.google.co.uk/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (https://www.google.co.uk/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (https://www.google.co.uk/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (https://www.google.co.uk/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (https://www.google.co.uk/__cypress/runner/cypress_runner.js:118786:18)\n    at Promise._fulfill (https://www.google.co.uk/__cypress/runner/cypress_runner.js:118731:18)",
-                "diff": null
-              },
-              "uuid": "eaaabf24-79c3-46e1-9d3d-9589e32314b8",
-              "parentUUID": "12f27d5f-0197-4fa2-8ede-b8eec875a141",
+              "code": "//Cypress.config('pageLoadTimeout',6000)\nvar homePage = new _HomePage.default();\nvar productpage = new _productPage.default();\ncy.visit(Cypress.env('url'));\nhomePage.getNameEditBox().type(this.data.name);\nhomePage.getGender().select(this.data.gender);\nhomePage.getTwoWayDataBinding().should('have.value', this.data.name);\nhomePage.getNameEditBox().should('have.attr', 'minlength', '2');\nhomePage.getRadioButton().should('be.disabled');\nhomePage.getShopTab().click();\nthis.data.ProductName.forEach(function (element) {\n  cy.selectProduct(element);\n});\nproductpage.checkOutButton().click();\nvar sum = 0;\ncy.get('tr td:nth-child(4) strong').each(function ($el, index, $list) {\n  var amount = $el.text();\n  var res = amount.split(\" \");\n  res = res[1].trim();\n  sum = Number(sum) + Number(res);\n}).then(function () {\n  cy.log(sum);\n});\ncy.get('h3 strong').then(function (element) {\n  var amount = element.text();\n  var res = amount.split(\" \");\n  var total = res[1].trim();\n  expect(Number(total)).to.equal(sum);\n});\ncy.contains('Checkout').click();\ncy.get('#country').type('ind');\ncy.get('.suggestions > :nth-child(1) > li > a').click();\ncy.get('.checkbox').click();\ncy.get('.ng-untouched > .btn').click(); //cy.get('.alert').should('have.text', 'Success! Thank you! Your order will be delivered in next few weeks :-).')\ncy.get('.alert').then(function (element) {\n  var actualTxt = element.text();\n  expect(actualTxt.includes(\"Success\")).to.be.true;\n});",
+              "err": {},
+              "uuid": "f8356925-b3a7-4f36-9d40-e9708c3539d4",
+              "parentUUID": "94fcc488-6963-4da9-ba82-6a8b6cc6dfaf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "eaaabf24-79c3-46e1-9d3d-9589e32314b8"
+          "passes": [
+            "f8356925-b3a7-4f36-9d40-e9708c3539d4"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 27470,
+          "duration": 10396,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

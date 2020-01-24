@@ -16,7 +16,7 @@ describe('My 1 Test Suite', function() {
         {
             expect (response.body).to.have.property("Msg","successfully added"),
             expect(response.status).to.eq(200)
-            cy.log(response)
+            cy.log(response.body)
         })
 
 
